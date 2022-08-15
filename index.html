@@ -7,11 +7,13 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,13 +27,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
                     </ul>
@@ -42,7 +44,7 @@
         <section class="mt-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active border rounded bg-primary p-5">
+                    <div class="carousel-item active border rounded panda-bg-primary p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
@@ -50,7 +52,7 @@
                                     <p>The best headphones for the people.Best sound quality.Best system bass.Best
                                         equilizer.</p>
                                     <h1>$299</h1>
-                                    <div class="btn btn-warning">
+                                    <div class="btn panda-btn-warning">
                                         Buy Now
                                     </div>
                                 </div>
@@ -61,14 +63,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active border rounded bg-primary p-5">
+                    <div class="carousel-item active border rounded panda-bg-primary p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
                                     <h2>Lenovo TV</h2>
                                     <p>Best android tv all over the world.</p>
                                     <h1>$899</h1>
-                                    <div class="btn btn-warning">
+                                    <div class="btn panda-btn-warning ">
                                         Buy Now
                                     </div>
                                 </div>
@@ -79,14 +81,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active border rounded bg-primary p-5">
+                    <div class="carousel-item active border rounded panda-bg-primary p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div>
                                     <h2>XBOX-2</h2>
                                     <p>Best xbox for the gamer who loves to play game.</p>
                                     <h1>$999</h1>
-                                    <div class="btn btn-warning">
+                                    <div class="btn panda-btn-warning ">
                                         Buy Now
                                     </div>
                                 </div>
@@ -117,7 +119,7 @@
         <!-- Catagories Starts -->
         <section>
             <div class="container text-center my-5">
-                <div class="row g-2">
+                <div class="row g-4 catagories">
 
                     <!-- Single Catagories -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -146,7 +148,7 @@
         </section>
         <!-- Catagories End -->
         <!-- Shoes section starts -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -159,7 +161,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-warning">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
@@ -174,7 +176,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-warning">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +192,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-warning">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
@@ -198,7 +200,7 @@
         </section>
         <!-- Shoes section ends -->
         <!-- Backpack section starts -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -212,7 +214,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-success">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
@@ -227,7 +229,7 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-success">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
@@ -243,14 +245,35 @@
 
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-success">Buy now>>></div>
+                            <div class="btn panda-btn-warning ">Buy now>>></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Backpack section ends -->
+        <!-- Backpack section ended -->
+        <!-- Subscription starts -->
+        <section style="height: 350px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center panda-bg-primary"
+            id="subscribe">
+            <div>
+                <h2>STAY IN TOUCH</h2>
+                <p>Get more updates</p>
+                <form>
+                    <div class="mb-1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn panda-btn-warning ">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Subscription ended -->
     </main>
+    <!-- Footer added -->
+    <footer class="mt-5 text-center">
+        <p><small>ⒸAlen Shofon, Khoiyarbill, Kutubdia</small></p>
+    </footer>
+    <!-- footer ended -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
